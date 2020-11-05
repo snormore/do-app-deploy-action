@@ -1,0 +1,5 @@
+name: 'App Platform Deploy'
+description: 'Deploy a DigitalOcean App Platform app'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
