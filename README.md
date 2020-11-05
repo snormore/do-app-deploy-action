@@ -1,5 +1,8 @@
 Deploy a [DigitalOcean App Platform](https://www.digitalocean.com/products/app-platform/) app using GitHub Actions.
 
+ - Auto-deploy your app from source on commit, while allowing you to run tests or perform other operations before.
+ - Auto-sync your in-repo `.do/app.yaml` on commit.
+
 ## Example
 
 https://github.com/snormore/sample-golang/tree/action
