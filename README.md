@@ -2,7 +2,22 @@ Deploy a [DigitalOcean App Platform](https://www.digitalocean.com/products/app-p
 
 ## Example
 
-Create a `.github/workflows/main.yml` with the following contents:
+https://github.com/snormore/sample-golang/tree/action
+
+Add your `.do/app.yaml`:
+
+**Note that you should not configure `deploy_on_push: true` for this workflow.**
+
+```yaml
+name: sample-golang
+services:
+- name: web
+  git:
+    repo_clone_url: https://github.com/snormore/sample-golang.git
+    branch: main
+```
+
+Create a `.github/workflows/main.yml`:
 
 ```yaml
 on:
